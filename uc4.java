@@ -1,23 +1,42 @@
-/**
- * OOPSBannerApp - UC4
- * Prints "OOPS" banner using String array and loop
- *
- * @author Anushka
- * @version 4.0
- */
 public class uc4 {
+
     public static void main(String[] args) {
 
-        String[] banner = {
-            String.join(" ", "*****", "*****", "*****", "*****"),
-            String.join(" ", "*   *", "*   *", "*   *", "*   *"),
-            String.join(" ", "*   *", "*   *", "*   *", "*   *"),
-            String.join(" ", "*   *", "*   *", "*****", "*****"),
-            String.join(" ", "*   *", "*   *", "*", "*"),
-            String.join(" ", "*   *", "*   *", "*", "*"),
-            String.join(" ", "*****", "*****", "*", "*")
-        };
+        // Array to store banner lines
+        String[] banner = new String[5];
 
+        // Populate banner lines
+        banner[0] = String.join("   ",
+                " OOO ",
+                " OOO ",
+                "PPPP ",
+                " SSS ");
+
+        banner[1] = String.join("   ",
+                "O   O",
+                "O   O",
+                "P   P",
+                "S    ");
+
+        banner[2] = String.join("   ",
+                "O   O",
+                "O   O",
+                "PPPP ",
+                " SSS ");
+
+        banner[3] = String.join("   ",
+                "O   O",
+                "O   O",
+                "P    ",
+                "    S");
+
+        banner[4] = String.join("   ",
+                " OOO ",
+                " OOO ",
+                "P    ",
+                " SSS ");
+
+        // Enhanced for loop to print banner
         for (String line : banner) {
             System.out.println(line);
         }
